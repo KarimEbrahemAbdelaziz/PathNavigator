@@ -8,11 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		743C73392BB6EDA3008392B9 /* PathNavigator.h in Headers */ = {isa = PBXBuildFile; fileRef = 743C73382BB6EDA3008392B9 /* PathNavigator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		743C73462BB6EE1B008392B9 /* URLPathComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743C73412BB6EE1B008392B9 /* URLPathComponent.swift */; };
+		743C73472BB6EE1B008392B9 /* URLMatchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743C73422BB6EE1B008392B9 /* URLMatchResult.swift */; };
+		743C73482BB6EE1B008392B9 /* URLPatchComponentMatchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743C73432BB6EE1B008392B9 /* URLPatchComponentMatchResult.swift */; };
+		743C73492BB6EE1B008392B9 /* URLConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743C73442BB6EE1B008392B9 /* URLConvertible.swift */; };
+		743C734A2BB6EE1B008392B9 /* URLMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743C73452BB6EE1B008392B9 /* URLMatcher.swift */; };
+		743C73502BB6EE21008392B9 /* NavigatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743C734B2BB6EE21008392B9 /* NavigatorProtocol.swift */; };
+		743C73512BB6EE21008392B9 /* NavigatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743C734C2BB6EE21008392B9 /* NavigatorDelegate.swift */; };
+		743C73522BB6EE21008392B9 /* UIViewController+TopMostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743C734D2BB6EE21008392B9 /* UIViewController+TopMostViewController.swift */; };
+		743C73532BB6EE21008392B9 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743C734E2BB6EE21008392B9 /* Navigator.swift */; };
+		743C73542BB6EE21008392B9 /* UIViewControllerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743C734F2BB6EE21008392B9 /* UIViewControllerType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		743C73352BB6EDA3008392B9 /* PathNavigator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PathNavigator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		743C73382BB6EDA3008392B9 /* PathNavigator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PathNavigator.h; sourceTree = "<group>"; };
+		743C73412BB6EE1B008392B9 /* URLPathComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLPathComponent.swift; sourceTree = "<group>"; };
+		743C73422BB6EE1B008392B9 /* URLMatchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLMatchResult.swift; sourceTree = "<group>"; };
+		743C73432BB6EE1B008392B9 /* URLPatchComponentMatchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLPatchComponentMatchResult.swift; sourceTree = "<group>"; };
+		743C73442BB6EE1B008392B9 /* URLConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLConvertible.swift; sourceTree = "<group>"; };
+		743C73452BB6EE1B008392B9 /* URLMatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLMatcher.swift; sourceTree = "<group>"; };
+		743C734B2BB6EE21008392B9 /* NavigatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigatorProtocol.swift; sourceTree = "<group>"; };
+		743C734C2BB6EE21008392B9 /* NavigatorDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigatorDelegate.swift; sourceTree = "<group>"; };
+		743C734D2BB6EE21008392B9 /* UIViewController+TopMostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+TopMostViewController.swift"; sourceTree = "<group>"; };
+		743C734E2BB6EE21008392B9 /* Navigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		743C734F2BB6EE21008392B9 /* UIViewControllerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,9 +65,35 @@
 		743C73372BB6EDA3008392B9 /* PathNavigator */ = {
 			isa = PBXGroup;
 			children = (
+				743C73402BB6EDD8008392B9 /* Navigator */,
+				743C733F2BB6EDCD008392B9 /* Matcher */,
 				743C73382BB6EDA3008392B9 /* PathNavigator.h */,
 			);
 			path = PathNavigator;
+			sourceTree = "<group>";
+		};
+		743C733F2BB6EDCD008392B9 /* Matcher */ = {
+			isa = PBXGroup;
+			children = (
+				743C73442BB6EE1B008392B9 /* URLConvertible.swift */,
+				743C73452BB6EE1B008392B9 /* URLMatcher.swift */,
+				743C73422BB6EE1B008392B9 /* URLMatchResult.swift */,
+				743C73432BB6EE1B008392B9 /* URLPatchComponentMatchResult.swift */,
+				743C73412BB6EE1B008392B9 /* URLPathComponent.swift */,
+			);
+			path = Matcher;
+			sourceTree = "<group>";
+		};
+		743C73402BB6EDD8008392B9 /* Navigator */ = {
+			isa = PBXGroup;
+			children = (
+				743C734E2BB6EE21008392B9 /* Navigator.swift */,
+				743C734C2BB6EE21008392B9 /* NavigatorDelegate.swift */,
+				743C734B2BB6EE21008392B9 /* NavigatorProtocol.swift */,
+				743C734D2BB6EE21008392B9 /* UIViewController+TopMostViewController.swift */,
+				743C734F2BB6EE21008392B9 /* UIViewControllerType.swift */,
+			);
+			path = Navigator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,6 +139,7 @@
 				TargetAttributes = {
 					743C73342BB6EDA3008392B9 = {
 						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1520;
 					};
 				};
 			};
@@ -129,6 +176,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				743C73472BB6EE1B008392B9 /* URLMatchResult.swift in Sources */,
+				743C73502BB6EE21008392B9 /* NavigatorProtocol.swift in Sources */,
+				743C73532BB6EE21008392B9 /* Navigator.swift in Sources */,
+				743C73482BB6EE1B008392B9 /* URLPatchComponentMatchResult.swift in Sources */,
+				743C73542BB6EE21008392B9 /* UIViewControllerType.swift in Sources */,
+				743C734A2BB6EE1B008392B9 /* URLMatcher.swift in Sources */,
+				743C73522BB6EE21008392B9 /* UIViewController+TopMostViewController.swift in Sources */,
+				743C73462BB6EE1B008392B9 /* URLPathComponent.swift in Sources */,
+				743C73512BB6EE21008392B9 /* NavigatorDelegate.swift in Sources */,
+				743C73492BB6EE1B008392B9 /* URLConvertible.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +320,7 @@
 		743C733D2BB6EDA3008392B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -286,6 +344,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -294,6 +353,7 @@
 		743C733E2BB6EDA3008392B9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
